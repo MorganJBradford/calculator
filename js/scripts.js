@@ -22,8 +22,6 @@ $(document).ready(function() {
     const result = add(number1, number2);
     $("#output").text(result);
   });
-});
-$(document).ready(function() {
   $("form#subtract").submit(function(event) {
     event.preventDefault();
     const number1 = parseInt($("#subtract1").val());
@@ -31,4 +29,12 @@ $(document).ready(function() {
     const result = subtract(number1, number2);
     $("#output").text(result);
   });
+  $("form#multiply").submit(function(event) {
+    event.preventDefault();
+    const number1 = parseInt($("#multiply1").val());
+    const number2 = parseInt($("#multiply2").val());
+    const result = multiply(number1, number2);
+    $("#output").text(result);
+  });
 });
+
